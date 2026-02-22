@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मेरा पोर्टफोलियो</title>
+    <style>
+        /* CSS Variables for easy customization */
+        :root {
+            --primary-color: #2563eb;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 5%;
+            text-align: center;
+            background: var(--white);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 4px solid var(--primary-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 5%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        /* Grid Layouts */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Simplification for this template */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><strong>मेरा नाम</strong></div>
+        <div class="nav-links">
+            <a href="#intro">परिचय</a>
+            <a href="#skills">कौशल</a>
+            <a href="#experience">अनुभव</a>
+            <a href="#projects">प्रोजेक्ट</a>
+            <a href="#contact">संपर्क</a>
+        </div>
+    </nav>
+
+    <section id="intro" class="hero">
+        <img src="https://via.placeholder.com/150" alt="फोटो" class="profile-img">
+        <h1>नमस्ते, मैं [आपका नाम] हूँ</h1>
+        <p>[आपका संक्षिप्त परिचय यहाँ लिखें - जैसे: फुल-स्टैक डेवलपर]</p>
+    </section>
+
+    <section id="skills">
+        <h2>कौशल (Skills) 🛠️</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="card">
+                <h3>Backend</h3>
+                <p>Node.js, Python, SQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>कार्य अनुभव (Experience) 💼</h2>
+        <div class="card">
+            <h3>[पद का नाम] - [कंपनी का नाम]</h3>
+            <p><em>[वर्ष - वर्ष तक]</em></p>
+            <ul>
+                <li>यहाँ अपनी मुख्य उपलब्धियां लिखें।</li>
+                <li>प्रोजेक्ट्स का नेतृत्व किया और टीम के साथ काम किया।</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>प्रोजेक्ट्स (Projects) 🚀</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="प्रोजेक्ट इमेज" style="width:100%; border-radius:4px;">
+                <h3>प्रोजेक्ट का शीर्षक</h3>
+                <p>इस प्रोजेक्ट का संक्षिप्त विवरण यहाँ दें।</p>
+                <a href="#" style="color: var(--primary-color);">लिंक देखें</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: var(--white);">
+        <h2>संपर्क करें (Contact) 📧</h2>
+        <p style="text-align:center;">ईमेल: example@email.com</p>
+        <p style="text-align:center;">लिंक्डइन: <a href="#">linkedin.com/in/username</a></p>
+    </section>
+
+    <footer style="text-align:center; padding: 2rem; color: var(--text-light);">
+        &copy; 2026 आपका नाम | सभी अधिकार सुरक्षित
+    </footer>
+
+</body>
+</html>
